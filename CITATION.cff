@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+
+message: "If you use this software or build upon this implementation, please cite it as follows."
+
+title: "MA-IRS Coverage Enhancement: An Independent Python Implementation"
+
+type: software
+
+authors:
+  - family-names: "Ujwal"
+    given-names: "Roop"
+
+version: "1.0.0"
+
+date-released: "2026-09-10"
+
+url: "https://github.com/UjwalRoop13/MA-IRS-Coverage-Enhancement"
+
+license: "MIT"
+
+keywords:
+  - "Movable Antenna"
+  - "Intelligent Reflecting Surface"
+  - "MA-IRS"
+  - "Wireless Communications"
+  - "Coverage Enhancement"
+  - "6G"
+  - "Python"
+  - "Optimization"
+
+abstract: >
+  Independent Python implementation and simulation study of a
+  movable antenna and intelligent reflecting surface based wireless
+  communication system for coverage enhancement. The implementation
+  includes channel modeling, movable antenna positioning, IRS phase
+  optimization, alternating optimization, and simulation-based
+  performance evaluation.
+
+repository-code: "https://github.com//MA-IRS-Coverage-Enhancement"
+
+references:
+  - type: article
+    authors:
+      - family-names: "Gao"
+        given-names: "Ying"
+      - family-names: "Wu"
+        given-names: "Qingqing"
+      - family-names: "Mei"
+        given-names: "Weidong"
+      - family-names: "Chen"
+        given-names: "Guangji"
+      - family-names: "Chen"
+        given-names: "Wen"
+      - family-names: "Zheng"
+        given-names: "Ziyuan"
+    title: "Integrating Movable Antennas and Intelligent Reflecting Surfaces for Coverage Enhancement"
+    journal: "IEEE Transactions on Wireless Communications"
+    year: 2026
