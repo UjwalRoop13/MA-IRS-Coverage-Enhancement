@@ -1,14 +1,14 @@
 """
-ma_irs_paper.py -- SINGLE-FILE implementation of
+ma_irs_coverage_enhancement.py -- SINGLE-FILE implementation of
 
   Y. Gao, Q. Wu, W. Mei, G. Chen, W. Chen, Z. Zheng, "Integrating Movable
   Antennas and Intelligent Reflecting Surfaces for Coverage Enhancement",
   IEEE Trans. Wireless Commun., vol. 25, 2026, pp. 6082-6095.
 
 Nothing to install beyond numpy + matplotlib, and nothing to import.
-Just:   python3 ma_irs_paper.py --fig 4
-        python3 ma_irs_paper.py --fig all --trials 8
-        python3 ma_irs_paper.py --check          # Prop. 1 vs Monte Carlo
+Just:   python3 ma_irs_coverage_enhancement.py --fig 4
+        python3 ma_irs_coverage_enhancement.py --fig all --trials 8
+        python3 ma_irs_coverage_enhancement.py --check          # Prop. 1 vs Monte Carlo
 
 Every parameter is taken verbatim from Section IV.  The seven quantities the
 paper does not state are collected in the ASSUMPTIONS dict below; change them
