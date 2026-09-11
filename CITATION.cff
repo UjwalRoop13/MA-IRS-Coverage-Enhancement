@@ -26,15 +26,17 @@ keywords:
   - "Coverage Enhancement"
   - "6G"
   - "Python"
-  - "Optimization"
+  - "Alternating Optimization"
+  - "Majorization-Minimization"
 
 abstract: >
   Independent Python implementation and simulation study of a
   movable antenna and intelligent reflecting surface based wireless
   communication system for coverage enhancement. The implementation
   includes channel modeling, movable antenna positioning, IRS phase
-  optimization, alternating optimization, and simulation-based
-  performance evaluation.
+  optimization, alternating optimization with MM/surrogate-based
+  updates, Monte Carlo validation, and simulation-based performance
+  evaluation.
 
 repository-code: "https://github.com/UjwalRoop13/MA-IRS-Coverage-Enhancement"
 
