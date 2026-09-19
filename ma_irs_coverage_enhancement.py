@@ -51,7 +51,7 @@ import matplotlib.pyplot as plt
 # =============================================================================
 FC          = 3e9                       # "carrier frequency of 3 GHz"
 LAM         = 0.1                       # "wavelength of lambda = 0.1 m"
-K           = 2 * np.pi / LAM
+K           = 2 * np.pi / LAM           # Rician Factor
 C0          = (LAM / (4 * np.pi)) ** 2  # "C0 = (lambda/4pi)^2"
 A_IRS       = 2.2                       # "path-loss exponents ... 2.2 for IRS-related links"
 A_DIR       = 3.5                       # "... and 3.5 for direct links"
