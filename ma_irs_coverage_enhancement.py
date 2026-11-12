@@ -1,18 +1,4 @@
-"""
-MA + IRS coverage enhancement, reproduction of
-Gao, Wu, Mei, Chen, Chen, Zheng, IEEE TWC vol. 25, 2026, pp. 6082-6095.
 
-    python ma_irs.py --fig 4
-    python ma_irs.py --fig all --trials 8
-    python ma_irs.py --check        # Prop. 1 vs Monte Carlo
-
-Swept figures have two panels: left keeps the direct link of Eq. (5),
-right sets f_u = 0. With the direct link in, everything sits on a ~30 dB
-floor and the schemes are indistinguishable; with f_u = 0 the levels match
-the paper.
-
-figs -> ./figs2, cached sweeps -> ./cache2.  'all' takes ~20 min.
-"""
 import argparse
 import os
 
@@ -22,7 +8,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-# ---- Sec. IV parameters ----------------------------------------------------
+
 FC = 3e9
 LAM = 0.1
 K = 2 * np.pi / LAM                 # wavenumber
