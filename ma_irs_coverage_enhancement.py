@@ -28,10 +28,8 @@ IRS_REF = np.array([[ 5.,   0., 12.],
                     [10.,  25.,  5.],
                     [10., -25.,  5.]])
 
-# target region and 5x5 m areas sampled on a 1 m grid
 REG_X, REG_Y, SIDE, STEP = (50., 70.), (-40., 40.), 5.0, 1.0
 
-# Things the paper doesn't specify. My choices, edit here.
 ASSUMPTIONS = dict(
     irs_layout="rotated",
     # (theta, phi) per panel in deg. theta=90 -> horizontal (IRS 1),
@@ -50,8 +48,6 @@ ASSUMPTIONS = dict(
     include_direct=False,
 )
 
-
-# ---- geometry --------------------------------------------------------------
 def upa_shape(n):
     n1 = max(1, int(round(np.sqrt(n))))
     return n1, int(np.ceil(n / n1))
@@ -115,7 +111,7 @@ class System:
 
         P1 = IRS_REF[:L]
         self.d_l = np.linalg.norm(P1, axis=1)
-        self.a_t = P1 / self.d_l[:, None]            # BS -> IRS directions
+        self.a_t = P1 / self.d_l[:, None]          
         # alpha, omega (26) and psi (27)
         self.al = self.a_t[:, 1][:, None] - self.a_t[:, 1][None, :]
         self.om = self.a_t[:, 2][:, None] - self.a_t[:, 2][None, :]
@@ -298,7 +294,6 @@ def solve(S, scheme, A, warm=None, seed=0):
     is_fpa = scheme.startswith("fpa")
     allE = np.arange(S.N)
 
-    # per-area IRS -> problem splits across areas
     if irs_ad:
         vals, Ts, vs = [], [], []
         n_runs = 1 if is_fpa else nr
